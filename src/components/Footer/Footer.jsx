@@ -168,7 +168,7 @@ export default function Footer() {
       </div>
       <div>
         <div className="sub-header-margin">
-          <h2 className="sec-font3 standard-fz2">NewsLetter</h2>
+          <h2 style={{marginBottom: ".3em"}} className="sec-font3 standard-fz2">NewsLetter</h2>
           <p className="min-font sec-font-clr">
             Subscribe to our newsletter to stay updated on current information
           </p>
