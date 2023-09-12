@@ -138,13 +138,13 @@ button {
     opacity: 1;
     pointer-events: all;
   }
-  .logo {
-    width: 130px;
-  }  
 }
 
 @media (max-width: 600px) {
   .top-nav {
     width: 100vw;
+  }
+  .logo {
+    width: 90px;
   }
 }

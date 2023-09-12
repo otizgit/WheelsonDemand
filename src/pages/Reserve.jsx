@@ -409,7 +409,7 @@ export default function Reserve() {
               className="pri-font-clr standard-weight"
               htmlFor="agree"
             >
-              By clicking, you accept our terms and policies
+              By clicking, you accept our <Link style={{textDecoration: "none"}} className="sec-font-clr2" to ="/policy">terms and policies</Link>
             </label>
           </div>
         </div>

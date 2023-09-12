@@ -62,7 +62,7 @@ export default function SelectedBlog() {
                     return (
                       <div className="sub-header-margin" key={keyPoint.id}>
                         <p
-                          style={{ marginBottom: ".3em" }}
+                          style={{ marginBottom: ".6em" }}
                           className="standard-fz blog-heading sec-font3 pri-font-clr"
                         >
                           {keyPoint.heading}
