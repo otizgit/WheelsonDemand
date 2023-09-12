@@ -89,17 +89,17 @@ export default function Contact() {
           <form action="">
             <div
               style={{ gap: "1em" }}
-              className="flex-main sub-header-margin contact-div"
+              className="flex-main form-wrapper contact-div"
             >
               <input required type="text" placeholder="Enter your name" />
               <input required type="email" placeholder="Enter your email" />
             </div>
             <div
-              className="sub-header-margin"
+              className="form-wrapper"
             >
               <input required type="text" placeholder="Subject" />
             </div>
-            <div>
+            <div className="form-wrapper">
               <textarea
                 cols="30"
                 rows="10"

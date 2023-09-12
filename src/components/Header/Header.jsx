@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="flex-main constant-width constant-padding">
-      <Link style={{ textDecoration: "none" }} to="/WheelsonDemand">
+      <Link style={{ textDecoration: "none" }} to="/home">
         <img loading="lazy" className="logo" src={logoWhite} alt="logo" />
       </Link>
       <nav
@@ -24,7 +24,7 @@ export default function Header() {
               style={{
                 textDecoration: "none",
               }}
-              to="/WheelsonDemand"
+              to="/home"
             >
               <p className="sec-font standard-fz">Home</p>
             </NavLink>

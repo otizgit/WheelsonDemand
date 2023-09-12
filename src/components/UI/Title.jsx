@@ -1,14 +1,7 @@
 import React from "react";
 import blob from "../../assets/images/blob.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function Title(props) {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-
   return (
     <div>
       <div className="title-wrapper header-margin2" data-aos="flip-up">

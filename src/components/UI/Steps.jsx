@@ -4,8 +4,6 @@ import Call from "../../assets/images/Steps-Images/Call.gif";
 import Choose from "../../assets/images/Steps-Images/Choose.gif";
 import "../../styles/steps.css";
 import Title from "./Title";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const processes = [
   {
@@ -29,10 +27,6 @@ const processes = [
 ];
 
 export default function Steps() {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
 
   return (
     <div className="constant-padding constant-margin">

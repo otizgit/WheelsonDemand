@@ -16,7 +16,7 @@ export default function Error() {
     <div style={{ position: "relative" }}>
       <img className="error-img" src={ErrorGifOne} alt="error-gif" />
       <Link
-        to="/WheelsonDemand"
+        to="/home"
         style={{ textDecoration: "none", color: "white", borderRadius: "5px" }}
         className="min-font back-to-home pri-bg btn-padding standard-weight"
       >

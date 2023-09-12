@@ -3,15 +3,8 @@ import "../../styles/hotdeals.css";
 import Title from "./Title";
 import carData from "../../assets/data/carData";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function HotDeals() {
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
-
   const hotDealsArray = [];
 
   carData.forEach((brand) => {
@@ -27,7 +20,12 @@ export default function HotDeals() {
       <div className="cars-container">
         {hotDealsArray.map((hotDeal, index) => {
           return (
-            <div key={index} className="car-box shadow" data-aos="fade-up">
+            <div
+              key={index}
+              className="car-box shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <img
                 loading="lazy"
                 src={hotDeal.imgUrl}

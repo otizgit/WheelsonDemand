@@ -3,15 +3,8 @@ import Title from "./Title";
 import blogData from "../../assets/data/blogData";
 import "../../styles/latestBlog.css";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function LatestBlog(props) {
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
-
   return (
     <div className="constant-margin constant-padding">
       {!props.displayHeader && <Title title="Latest Blogs" />}
@@ -23,6 +16,7 @@ export default function LatestBlog(props) {
               className="blog-container transition shadow"
               data-aos="fade-up"
               data-aos-delay={(index + 1) * 200}
+              data-aos-duration="500"
             >
               <img
                 src={data.imgUrl}

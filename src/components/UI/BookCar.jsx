@@ -1,14 +1,8 @@
 import React from "react";
 import "../../styles/bookcar.css";
 import Title from "./Title";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function BookCar() {
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
   
   return (
     <section className="book-car-section constant-margin">

@@ -4,15 +4,8 @@ import Title from "./Title";
 import clientOne from "../../assets/images/Testimonial-images/user1.jpg";
 import clientTwo from "../../assets/images/Testimonial-images/user2.jpg";
 import clientThree from "../../assets/images/Testimonial-images/user3.webp";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function Testimonial() {
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
-
   const testimonialData = [
     {
       id: 1,
@@ -49,6 +42,7 @@ export default function Testimonial() {
               key={data.id}
               className="testimonial-container blog-container transition shadow"
               data-aos="fade-up"
+              data-aos-duration="500"
             >
               <p
                 style={{ lineHeight: 1.55 }}
@@ -57,14 +51,14 @@ export default function Testimonial() {
                 "{data.testimony}"
               </p>
               <div className="customer-wrapper flex-main">
-                <div className="flex">
+                <div className="flex" style={{gap: "1em"}}>
                   <img
                     className="customer-img"
                     src={data.customerImg}
                     alt="customer image"
                   />
                   <div className="customer-info">
-                    <p className="standard-fz">{data.name}</p>
+                    <p style={{marginBottom: ".5em"}} className="standard-fz">{data.name}</p>
                     <p className="standard-fz">{data.position}</p>
                   </div>
                 </div>

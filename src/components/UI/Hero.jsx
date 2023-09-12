@@ -3,15 +3,8 @@ import heroImage from "../../assets/images/hero-img2.jpg";
 import "../../styles/hero.css";
 import mobileHeroImage from "../../assets/images/heroMobile-img3.jpg";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function Hero() {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-
   return (
     <section className="constant-margin">
       <div className="hero-content">

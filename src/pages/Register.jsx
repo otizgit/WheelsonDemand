@@ -16,26 +16,29 @@ export default function Register() {
     <div>
       <SectionHeader title="REGISTER" />
       <form className="signin-form constant-margin sec-bg" action="">
-        <p className="standard-fz header-margin align sec-font sec-font-clr">
+        <p
+          className="standard-fz header-margin align sec-font sec-font-clr"
+          data-aos="fade"
+        >
           Register Your Account
         </p>
         <div
           style={{ gap: ".7em" }}
-          className="flex-main form-wrapper sub-header-margin"
+          className="flex-main form-wrapper form-wrapper"
         >
           <input required type="text" placeholder="Enter First Name" />
           <input required type="text" placeholder="Enter Last Name" />
         </div>
-        <div className="sub-header-margin">
+        <div className="form-wrapper">
           <input required type="text" placeholder="Enter username" />
         </div>
-        <div className="sub-header-margin">
+        <div className="form-wrapper">
           <input required type="email" placeholder="Enter email" />
         </div>
-        <div className="sub-header-margin password-div">
+        <div className="form-wrapper password-div">
           <input required type="password" placeholder="Enter password" />
         </div>
-        <div className="sub-header-margin password-div">
+        <div className="form-wrapper password-div">
           <input required type="password" placeholder="Confirm password" />
         </div>
         <button className="pri-bg transition standard-weight header-margin">

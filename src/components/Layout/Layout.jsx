@@ -4,10 +4,17 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import ScrollToTop from "../UI/ScrollToTop";
 import { ToastContainer } from "react-toastify";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Layout(props) {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+
   return (
-    <div style={{position: "relative"}}>
+    <div style={{ position: "relative" }}>
       {props.displayHeader && <Header />}
       <Routers />
       <ScrollToTop />

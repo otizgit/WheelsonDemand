@@ -32,7 +32,7 @@ export default function Footer() {
     <footer className="constant-padding">
       <div>
         <div className="header-margin">
-          <Link to="/WheelsonDemand">
+          <Link to="/home">
             <img loading="lazy" className="logo" src={logoWhite} alt="logo" />
           </Link>
         </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                 style={{
                   textDecoration: "none",
                 }}
-                to="/WheelsonDemand"
+                to="/home"
               >
                 <p className="sec-font standard-fz">Home</p>
               </NavLink>
@@ -212,7 +212,7 @@ export default function Footer() {
         <div className="location">
           <p className="min-font sec-font-clr">
             <i className="fa-solid fa-copyright sec-font-clr standard-fz"></i>{" "}
-            {date.getFullYear()}, WheelsonDemand, All rights reserved.
+            {date.getFullYear()}, home, All rights reserved.
           </p>
         </div>
       </div>

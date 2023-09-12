@@ -9,10 +9,10 @@ export default function BecomeADriver() {
     <div className="constant-margin constant-padding earn-with-us flex">
       <img loading="lazy" className="earn-img" src={Lambo} alt="Lamborghini" />
       <div className="earn-content">
-        <h2 className="sec-font3 title-fz sub-header-margin">
+        <h2 style={{lineHeight: "40px"}} className="sec-font3 title-fz sub-header-margin">
           Want To Earn With Us?
         </h2>
-        <p className="standard-fz sec-font-clr sub-header-margin standard-weight">
+        <p style={{lineHeight: "25px"}} className="standard-fz sec-font-clr header-margin standard-weight">
           Take clients for a ride in their dream car today
         </p>
         <Link

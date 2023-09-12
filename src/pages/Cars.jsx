@@ -6,8 +6,6 @@ import carData from "../assets/data/carData";
 import SectionHeader from "../components/UI/SectionHeader";
 import "../styles/cars.css";
 import { ToggleContext } from "../App";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function Cars() {
   const setDisplayHeader = useContext(ToggleContext);
@@ -16,11 +14,6 @@ export default function Cars() {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
   }, []);
-
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
 
   let paramCheck = "";
   const carParams = useParams();
@@ -83,6 +76,7 @@ export default function Cars() {
                 className="cars-btn sec-bg scale transition"
                 data-aos="fade"
                 data-aos-delay={(index + 1) * 100}
+                data-aos-duration="500"
               >
                 <p
                   style={{

@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import SectionHeader from "../components/UI/SectionHeader";
 import { ToggleContext } from "../App";
 import "../styles/signin.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function SignIn() {
   const setDisplayHeader = useContext(ToggleContext);
@@ -13,11 +11,6 @@ export default function SignIn() {
     window.scrollTo(0, 0);
     setDisplayHeader(false);
   }, []);
-
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
 
   const [isOnView, setIsOnView] = useState(false);
   const inputRef = useRef();
@@ -41,10 +34,10 @@ export default function SignIn() {
         >
           Sign In To Your Account
         </p>
-        <div className="sub-header-margin">
+        <div className="form-wrapper">
           <input required type="email" placeholder="Enter email" />
         </div>
-        <div className="sub-header-margin password-div">
+        <div className="form-wrapper password-div">
           <input
             required
             ref={inputRef}
@@ -61,9 +54,11 @@ export default function SignIn() {
         <button className="pri-bg transition standard-weight header-margin">
           Sign In
         </button>
-        <p className="min-fz sec-font-clr2 sub-header-margin standard-weight align">
-          Forgot password?
-        </p>
+        <Link style={{ textDecoration: "none" }} to="/">
+          <p className="min-fz sec-font-clr2 sub-header-margin standard-weight align">
+            Forgot password?
+          </p>
+        </Link>
         <Link style={{ textDecoration: "none" }} to="/register">
           <p className="min-fz sec-font-clr2 sub-header-margin standard-weight align">
             Don't have an account?

@@ -11,8 +11,6 @@ import teamTwo from "../../src/assets/images/Team/team2.avif";
 import teamThree from "../../src/assets/images/Team/team3.avif";
 import SectionHeader from "../components/UI/SectionHeader";
 import { ToggleContext } from "../App";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function About() {
   const setDisplayHeader = useContext(ToggleContext);
@@ -21,11 +19,6 @@ export default function About() {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
   }, []);
-
-  AOS.init({
-    duration: 500,
-    once: true,
-  });
 
   const teamData = [
     {
@@ -80,6 +73,7 @@ export default function About() {
               style={{ gap: ".5em" }}
               data-aos="fade-up"
               data-aos-delay="100"
+              data-aos-duration="500"
             >
               <i className="fa-solid fa-circle-check sec-font-clr2"></i>
               <p className="standard-fz sec-font">Quality Services</p>
@@ -89,6 +83,7 @@ export default function About() {
               style={{ gap: ".5em" }}
               data-aos="fade-up"
               data-aos-delay="200"
+              data-aos-duration="500"
             >
               <i className="fa-solid fa-circle-check sec-font-clr2"></i>
               <p className="standard-fz sec-font">Quality Vehicles</p>
@@ -98,6 +93,7 @@ export default function About() {
               style={{ gap: ".5em" }}
               data-aos="fade-up"
               data-aos-delay="300"
+              data-aos-duration="500"
             >
               <i className="fa-solid fa-circle-check sec-font-clr2"></i>
               <p className="standard-fz sec-font">Quality Offers</p>
@@ -107,6 +103,7 @@ export default function About() {
               style={{ gap: ".5em" }}
               data-aos="fade-up"
               data-aos-delay="300"
+              data-aos-duration="500"
             >
               <i className="fa-solid fa-circle-check sec-font-clr2"></i>
               <p className="standard-fz sec-font">Swift Operations</p>
@@ -116,6 +113,7 @@ export default function About() {
               style={{ gap: ".5em" }}
               data-aos="fade-up"
               data-aos-delay="400"
+              data-aos-duration="500"
             >
               <i className="fa-solid fa-circle-check sec-font-clr2"></i>
               <p className="standard-fz sec-font">24hr Availabilty</p>
@@ -125,6 +123,7 @@ export default function About() {
               style={{ gap: ".5em" }}
               data-aos="fade-up"
               data-aos-delay="500"
+              data-aos-duration="500"
             >
               <i className="fa-solid fa-circle-check sec-font-clr2"></i>
               <p className="standard-fz sec-font">24hr Customer Service</p>
@@ -140,6 +139,7 @@ export default function About() {
           <p
             className="standard-fz sec-font-clr sub-header-margin"
             data-aos="fade-up"
+            data-aos-duration="500"
           >
             In a rapidly evolving world where convenience, efficiency, and
             sustainability are paramount, our car rental app envisions
@@ -153,6 +153,7 @@ export default function About() {
             className="standard-fz sec-font-clr sub-header-margin"
             data-aos="fade-up"
             data-aos-delay="100"
+            data-aos-duration="500"
           >
             At the heart of our vision is a user-centric approach that
             prioritizes simplicity, convenience, and personalization. Our app
@@ -166,6 +167,7 @@ export default function About() {
             className="standard-fz sec-font-clr sub-header-margin"
             data-aos="fade-up"
             data-aos-delay="200"
+            data-aos-duration="500"
           >
             We aim to provide a diverse and adaptable fleet that caters to a
             variety of preferences and needs. From fuel-efficient compact cars
@@ -179,6 +181,7 @@ export default function About() {
             className="standard-fz sec-font-clr"
             data-aos="fade-up"
             data-aos-delay="300"
+            data-aos-duration="500"
           >
             The vision of our car rental app encapsulates a future where
             mobility is not just a means of getting from point A to B, but a
@@ -193,7 +196,11 @@ export default function About() {
         <div className="writeup-overlay"></div>
       </div>
       <div className="flex-plain constant-padding header-margin2 about-newsletter-container">
-        <div className="download-links-img" data-aos="fade-up">
+        <div
+          className="download-links-img"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <h2 className="sec-font standard-fz2">We Are Available On Mobile</h2>
           <p className="min-font sec-font-clr sub-header-margin">
             Check out our mobile app today
@@ -217,7 +224,7 @@ export default function About() {
             </button>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="100">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
           <img
             loading="lazy"
             className="phone-gif"
@@ -227,7 +234,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex-plain constant-padding constant-margin about-newsletter-container about-newsletter">
-        <div data-aos="fade-up" data-aos-delay="100">
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
           <img
             loading="lazy"
             className="phone-gif"
@@ -257,7 +264,7 @@ export default function About() {
           Meet Our Highly Experienced Team
         </h1>
         <div className="cars-container">
-          {teamData.map((data, index) => {
+          {teamData.map((data) => {
             return (
               <div key={data.id} className="team-container shadow">
                 <img
