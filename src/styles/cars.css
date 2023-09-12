@@ -1,0 +1,122 @@
+.car-brand-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
+  gap: 1.4em;
+}
+.car-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  height: clamp(350px, 20vw, 1400px);
+}
+.cars-btn {
+  border-radius: 2rem 5rem;
+  border: 2px solid var(--priClr);
+  padding: 0.7em 1.6em;
+}
+.car-make-container {
+  flex-basis: 60%;
+  position: relative;
+}
+.car-make {
+  border-radius: 30px;
+  width: 100%;
+}
+.car-make:hover {
+  background-color: var(--priClr);
+  color: var(--white);
+}
+.car-display-img img {
+  width: 1100px;
+  margin-inline: auto;
+}
+.car-info-container {
+  flex-basis: 60%;
+}
+.car-info-container h1 {
+  padding-block: .8em;
+  border-bottom: 2px solid var(--priClr);
+}
+.car-info-container > div {
+  background-color: var(--black);
+}
+.car-padding {
+  padding-block: 0.6em;
+}
+.car-info-wrapper {
+  padding-inline: 0.6em;
+}
+.car-info-container p {
+  flex: 1;
+  padding-block: 1em;
+}
+.car-info-container p:nth-child(1) {
+  border-right: 2px solid var(--priClr);
+}
+.active-button {
+  background-color: var(--priClr);
+}
+.query-car-name {
+  display: none;
+}
+.car-make-container-mobile {
+  display: none;
+}
+
+@media (max-width: 1030px) {
+  .car-wrapper {
+    flex-direction: column;
+    height: unset;
+    gap: 3  em;
+  }
+  .car-brand-container {
+    justify-content: unset;
+    overflow-x: auto;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  .car-brand-container::-webkit-scrollbar {
+    width: 0;
+  }
+  .car-make {
+    border-radius: unset;
+  }
+  .car-make-container {
+    width: 100%;
+  }
+  .car-filter {
+    background-color: var(--black);
+    border-radius: 5px;
+    width: 100%;
+    padding-block: 1em;
+    position: relative;
+    color: var(--white);
+  }
+  .car-list {
+    position: absolute;
+    top: 100%;
+    background-color: var(--black);
+    left: 0;
+    right: 0;
+  }
+  .car-display-img img {
+    width: 100%;
+  }
+  .car-info-container {
+    width: 100%;
+  }
+  .query-car-name {
+    display: block;
+    background-color: unset;
+  }
+  .car-info-container p {
+    padding-block: 1.3em;
+  }  
+  .car-make-container-mobile {
+    display: block;
+  }
+  .car-make-container-desktop {
+    display: none;
+  }
+}
