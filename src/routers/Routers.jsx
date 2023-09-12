@@ -18,8 +18,8 @@ export default function Routers() {
   return (
     <div>
       <Routes>
-        <Route path="/WheelsonDemand" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/WheelsonDemand" />} />
+        <Route path="/WheelsonDemand" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blog />} />

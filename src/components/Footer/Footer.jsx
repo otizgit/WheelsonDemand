@@ -32,7 +32,7 @@ export default function Footer() {
     <footer className="constant-padding">
       <div>
         <div className="header-margin">
-          <Link to="/home">
+          <Link to="/WheelsonDemand">
             <img loading="lazy" className="logo" src={logoWhite} alt="logo" />
           </Link>
         </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                 style={{
                   textDecoration: "none",
                 }}
-                to="/home"
+                to="/WheelsonDemand"
               >
                 <p className="sec-font standard-fz">Home</p>
               </NavLink>
