@@ -27,7 +27,6 @@ const processes = [
 ];
 
 export default function Steps() {
-
   return (
     <div className="constant-padding constant-margin">
       <Title title="Explore The Rental Process" />

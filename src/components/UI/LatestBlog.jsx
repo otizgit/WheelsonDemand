@@ -3,6 +3,7 @@ import Title from "./Title";
 import blogData from "../../assets/data/blogData";
 import "../../styles/latestBlog.css";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function LatestBlog(props) {
   return (
@@ -18,9 +19,9 @@ export default function LatestBlog(props) {
               data-aos-delay={(index + 1) * 200}
               data-aos-duration="500"
             >
-              <img
+              <LazyLoadImage
+                effect="blur"
                 src={data.imgUrl}
-                loading="lazy"
                 alt="blog image"
                 className="sub-header-margin blog-image"
               />

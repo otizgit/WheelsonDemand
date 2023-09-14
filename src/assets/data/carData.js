@@ -1,41 +1,3 @@
-import Audi1 from "../images/Cars/Audi/Audi1.png";
-import Audi2 from "../images/Cars/Audi/Audi2.png";
-import Audi3 from "../images/Cars/Audi/Audi3.png";
-import Audi4 from "../images/Cars/Audi/Audi4.png";
-
-import BMW1 from "../images/Cars/BMW/BMW1.png";
-import BMW2 from "../images/Cars/BMW/BMW2.png";
-import BMW3 from "../images/Cars/BMW/BMW3.png";
-import BMW4 from "../images/Cars/BMW/BMW4.png";
-
-import Chev1 from "../images/Cars/Chevrolet/Chevrolet1.png";
-import Chev2 from "../images/Cars/Chevrolet/Chevrolet2.png";
-import Chev3 from "../images/Cars/Chevrolet/Chevrolet3.png";
-
-import Ford1 from "../images/Cars/Ford/Ford1.png";
-import Ford2 from "../images/Cars/Ford/Ford2.png";
-import Ford3 from "../images/Cars/Ford/Ford3.png";
-import Ford4 from "../images/Cars/Ford/Ford4.png";
-import Ford5 from "../images/Cars/Ford/Ford5.png";
-
-import Porsche1 from "../images/Cars/Porsche/Porsche1.png";
-import Porsche2 from "../images/Cars/Porsche/Porsche2.png";
-import Porsche3 from "../images/Cars/Porsche/Porsche3.png";
-
-import Lexus1 from "../images/Cars/Lexus/Lexus1.png";
-import Lexus2 from "../images/Cars/Lexus/Lexus2.png";
-import Lexus3 from "../images/Cars/Lexus/Lexus3.png";
-import Lexus4 from "../images/Cars/Lexus/Lexus4.png";
-import Lexus5 from "../images/Cars/Lexus/Lexus5.png";
-
-import Toyota1 from "../images/Cars/Toyota/Toyota1.png";
-import Toyota2 from "../images/Cars/Toyota/Toyota2.png";
-import Toyota3 from "../images/Cars/Toyota/Toyota3.png";
-import Toyota4 from "../images/Cars/Toyota/Toyota4.png";
-
-import Honda1 from "../images/Cars/Honda/Honda1.png";
-import Honda2 from "../images/Cars/Honda/Honda2.png";
-
 const carData = [
   {
     id: 1,
@@ -50,7 +12,7 @@ const carData = [
         carType: "Automatic",
         mileage: "17 Kmpl",
         rating: "5.0/5.0",
-        imgUrl: Audi1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Audi1.png?updatedAt=1694594489114",
         category: "hot deals",
         color: "Brown",
       },
@@ -63,7 +25,7 @@ const carData = [
         carType: "Manual",
         mileage: "14.33 Kmpl",
         rating: "4.2/5.0",
-        imgUrl: Audi2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Audi2.png?updatedAt=1694594488977",
         category: "",
         color: "Red",
       },
@@ -76,7 +38,7 @@ const carData = [
         carType: "Automatic",
         mileage: "12 Kmpl",
         rating: "4.9/5.0",
-        imgUrl: Audi3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Audi3.png?updatedAt=1694594489872",
         category: "",
         color: "Black",
       },
@@ -90,7 +52,7 @@ const carData = [
         carType: "Automatic",
         mileage: "11.2 Kmpl",
         rating: "5.0/5.0",
-        imgUrl: Audi4,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Audi4.png?updatedAt=1694594489795",
         category: "",
         color: "Black",
       },
@@ -109,7 +71,7 @@ const carData = [
         carType: "Automatic",
         mileage: "16.55 Kmpl",
         rating: "4.2/5.0",
-        imgUrl: BMW1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/BMW1.png?updatedAt=1694594531270",
         category: "hot deals",
         color: "White",
       },
@@ -122,7 +84,7 @@ const carData = [
         carType: "Manual",
         mileage: "9.76 Kmpl",
         rating: "4.3/5.0",
-        imgUrl: BMW2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/BMW2.png?updatedAt=1694594531811",
         category: "",
         color: "Yellow",
       },
@@ -135,7 +97,7 @@ const carData = [
         carType: "Manual",
         mileage: "10.13 Kmpl",
         rating: "4.5/5.0",
-        imgUrl: BMW3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/BMW3.png?updatedAt=1694594530759",
         category: "",
         color: "White",
       },
@@ -148,7 +110,7 @@ const carData = [
         carType: "Manual",
         mileage: "12 Kmpl",
         rating: "4.8/5.0",
-        imgUrl: BMW4,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/BMW4.png?updatedAt=1694594531805",
         category: "",
         color: "Black",
       },
@@ -167,7 +129,7 @@ const carData = [
         carType: "Automatic",
         mileage: "12 Kmpl",
         rating: "4.5/5.0",
-        imgUrl: Chev1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Chevrolet1.png?updatedAt=1694596548280",
         category: "hot deals",
         color: "Yellow",
       },
@@ -180,7 +142,7 @@ const carData = [
         carType: "Automatic",
         mileage: "10.5 Kmpl",
         rating: "4.4/5.0",
-        imgUrl: Chev2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Chevrolet2.png?updatedAt=1694596548461",
         category: "",
         color: "Yellow",
       },
@@ -193,7 +155,7 @@ const carData = [
         carType: "Automatic",
         mileage: "14.81 Kmpl",
         rating: "4.3/5.0",
-        imgUrl: Chev3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Chevrolet3.png?updatedAt=1694596548076",
         category: "",
         color: "Black",
       },
@@ -212,7 +174,7 @@ const carData = [
         carType: "Automatic",
         mileage: "13 Kmpl",
         rating: "5.0/5.0",
-        imgUrl: Ford1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Ford1.png?updatedAt=1694596832735",
         category: "",
         color: "Red",
       },
@@ -225,7 +187,7 @@ const carData = [
         carType: "Automatic",
         mileage: "6.25 Kmpl",
         rating: "4.9/5.0",
-        imgUrl: Ford2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Ford2.png?updatedAt=1694596835256",
         category: "",
         color: "White",
       },
@@ -238,7 +200,7 @@ const carData = [
         carType: "Automatic",
         mileage: "13.3 Kmpl",
         rating: "4.6/5.0",
-        imgUrl: Ford3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Ford3.png?updatedAt=1694596834263",
         category: "",
         color: "Blue",
       },
@@ -251,7 +213,7 @@ const carData = [
         carType: "Manual",
         mileage: "14.71 Kmpl",
         rating: "4.4/5.0",
-        imgUrl: Ford4,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Ford4.png?updatedAt=1694596835366",
         category: "",
         color: "Blue",
       },
@@ -264,7 +226,7 @@ const carData = [
         carType: "Automatic",
         mileage: "10.3 Kmpl",
         rating: "4.0/5.0",
-        imgUrl: Ford5,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Ford5.png?updatedAt=1694596834985",
         category: "",
         color: "Red",
       },
@@ -283,7 +245,7 @@ const carData = [
         carType: "Automatic",
         mileage: "23.1 Kmpl",
         rating: "4.4/5.0",
-        imgUrl: Honda1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Honda1.png?updatedAt=1694596992020",
         category: "hot deals",
         color: "Blue",
       },
@@ -296,7 +258,7 @@ const carData = [
         carType: "Automatic",
         mileage: "21.9 Kmpl",
         rating: "4.8/5.0",
-        imgUrl: Honda2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Honda2.png?updatedAt=1694596992019",
         category: "",
         color: "Beige",
       },
@@ -315,7 +277,7 @@ const carData = [
         carType: "Automatic",
         mileage: "18.8 Kmpl",
         rating: "5.0/5.0",
-        imgUrl: Lexus1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Lexus1.png?updatedAt=1694597278114",
         category: "",
         color: "Blue",
       },
@@ -328,7 +290,7 @@ const carData = [
         carType: "Automatic",
         mileage: "14.8 Kmpl",
         rating: "4.8/5.0",
-        imgUrl: Lexus2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Lexus2.png?updatedAt=1694597277210",
         category: "",
         color: "Red",
       },
@@ -341,7 +303,7 @@ const carData = [
         carType: "Automatic",
         mileage: "20.7 Kmpl",
         rating: "5.0/5.0",
-        imgUrl: Lexus3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Lexus3.png?updatedAt=1694597276046",
         category: "",
         color: "White",
       },
@@ -354,7 +316,7 @@ const carData = [
         carType: "Automatic",
         mileage: "7.3 Kmpl",
         rating: "4.6/5.0",
-        imgUrl: Lexus4,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Lexus4.png?updatedAt=1694597279152",
         category: "",
         color: "Blue",
       },
@@ -367,7 +329,7 @@ const carData = [
         carType: "Automatic",
         mileage: "12.8 Kmpl",
         rating: "4.6/5.0",
-        imgUrl: Lexus5,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Lexus5.png?updatedAt=1694597278998",
         category: "",
         color: "Grey",
       },
@@ -386,7 +348,7 @@ const carData = [
         carType: "Manual",
         mileage: "11.24 Kmpl",
         rating: "4.1/5.0",
-        imgUrl: Porsche1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Porsche1.png?updatedAt=1694597399653",
         category: "hot deals",
         color: "Red",
       },
@@ -399,7 +361,7 @@ const carData = [
         carType: "Manual",
         mileage: "10.75 Kmpl",
         rating: "4.0/5.0",
-        imgUrl: Porsche2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Porsche2.png?updatedAt=1694597399501",
         category: "",
         color: "Red",
       },
@@ -412,7 +374,7 @@ const carData = [
         carType: "Manual",
         mileage: "10.75 Kmpl",
         rating: "4.1/5.0",
-        imgUrl: Porsche3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Porsche3.png?updatedAt=1694597397178",
         category: "",
         color: "White",
       },
@@ -431,7 +393,7 @@ const carData = [
         carType: "Automatic",
         mileage: "18 Kmpl",
         rating: "4.5/5.0",
-        imgUrl: Toyota1,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Toyota1.png?updatedAt=1694597509048",
         category: "hot deals",
         color: "Brown",
       },
@@ -444,7 +406,7 @@ const carData = [
         carType: "Automatic",
         mileage: "18.86 Kmpl",
         rating: "4.6/5.0",
-        imgUrl: Toyota2,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Toyota2.png?updatedAt=1694597509486",
         category: "",
         color: "Blue",
       },
@@ -457,7 +419,7 @@ const carData = [
         carType: "Manual",
         mileage: "23 Kmpl",
         rating: "4.7/5.0",
-        imgUrl: Toyota3,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Toyota3.png?updatedAt=1694597508857",
         category: "",
         color: "Silver",
       },
@@ -470,7 +432,7 @@ const carData = [
         carType: "Automatic",
         mileage: "11.13 Kmpl",
         rating: "4.9/5.0",
-        imgUrl: Toyota4,
+        imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-600/Toyota4.png?updatedAt=1694597508434",
         category: "",
         color: "White",
       },

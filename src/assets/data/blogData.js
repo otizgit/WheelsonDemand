@@ -1,7 +1,3 @@
-import blogImage1 from "../images/Blog-Images/blog-image1.webp";
-import blogImage2 from "../images/Blog-Images/blog-image2.webp";
-import blogImage3 from "../images/Blog-Images/blog-image3.webp";
-
 import userImg1 from "../images/Blog-Images/users/user1.avif";
 import userImg2 from "../images/Blog-Images/users/user2.avif";
 import userImg3 from "../images/Blog-Images/users/user3.jpg";
@@ -71,7 +67,8 @@ const blogData = [
     userName: "John Shaw",
     date: "11 Aug, 2023",
     time: "9:30pm",
-    imgUrl: blogImage1,
+    imgUrl:
+      "https://ik.imagekit.io/zusxqcpbw/tr:w-400/blog-image1.webp?updatedAt=1694599415504",
     replies: [
       {
         id: 1,
@@ -162,7 +159,8 @@ const blogData = [
     userName: "Kate Gibbs",
     date: "13 Feb, 2023",
     time: "10:44am",
-    imgUrl: blogImage2,
+    imgUrl:
+      "https://ik.imagekit.io/zusxqcpbw/tr:w-400/blog-image2.webp?updatedAt=1694599415528",
     replies: [
       {
         id: 1,
@@ -278,7 +276,8 @@ const blogData = [
     userName: "Daniel Ross",
     date: "11 Mar, 2023",
     time: "5:23pm",
-    imgUrl: blogImage3,
+    imgUrl:
+      "https://ik.imagekit.io/zusxqcpbw/tr:w-400/blog-image3.webp?updatedAt=1694599415490",
     replies: [
       {
         id: 1,

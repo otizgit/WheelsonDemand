@@ -1,9 +1,9 @@
 import React from "react";
 import "../../styles/testimonial.css";
 import Title from "./Title";
-import clientOne from "../../assets/images/Testimonial-images/user1.jpg";
 import clientTwo from "../../assets/images/Testimonial-images/user2.jpg";
 import clientThree from "../../assets/images/Testimonial-images/user3.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Testimonial() {
   const testimonialData = [
@@ -13,7 +13,8 @@ export default function Testimonial() {
       position: "Client",
       testimony:
         "We rented a car from this website to go camping in the outskirts of town, the process was very easy and we really enjoyed the ride.",
-      customerImg: clientOne,
+      customerImg:
+        "https://ik.imagekit.io/zusxqcpbw/tr:w-200/user1.jpg?updatedAt=1694598983137",
     },
     {
       id: 2,
@@ -32,17 +33,19 @@ export default function Testimonial() {
       customerImg: clientThree,
     },
   ];
+
   return (
     <div className="constant-padding constant-margin">
       <Title title="Client's Testimonial" />
       <div className="cars-container">
-        {testimonialData.map((data) => {
+        {testimonialData.map((data, index) => {
           return (
             <div
               key={data.id}
               className="testimonial-container blog-container transition shadow"
               data-aos="fade-up"
               data-aos-duration="500"
+              data-aos-delay={index * 100}
             >
               <p
                 style={{ lineHeight: 1.55 }}
@@ -51,14 +54,17 @@ export default function Testimonial() {
                 "{data.testimony}"
               </p>
               <div className="customer-wrapper flex-main">
-                <div className="flex" style={{gap: "1em"}}>
-                  <img
+                <div className="flex" style={{ gap: "1em" }}>
+                  <LazyLoadImage
+                    effect="blur"
                     className="customer-img"
                     src={data.customerImg}
                     alt="customer image"
                   />
                   <div className="customer-info">
-                    <p style={{marginBottom: ".5em"}} className="standard-fz">{data.name}</p>
+                    <p style={{ marginBottom: ".5em" }} className="standard-fz">
+                      {data.name}
+                    </p>
                     <p className="standard-fz">{data.position}</p>
                   </div>
                 </div>

@@ -6,27 +6,9 @@ import playStoreImg from "../../assets/images/Download-Links/play-store.png";
 import appStoreImg from "../../assets/images/Download-Links/app-store.png";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NewsletterForm from "../UI/NewsletterForm";
 
 export default function Footer() {
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  const inputRef = useRef(null);
-
-  function footerEmailSubmit() {
-    if (inputRef.current.value === "") {
-      toast.error("Please enter an email", {
-        theme: "dark",
-      });
-    } else if (!inputRef.current.value.match(emailRegex)) {
-      toast.error("Please enter a valid email", {
-        theme: "dark",
-      });
-    } else {
-      toast.success("Subscription successful, you'll start receiving emails.", {
-        theme: "dark",
-      });
-    }
-  }
-
   const date = new Date();
   return (
     <footer className="constant-padding">
@@ -168,24 +150,18 @@ export default function Footer() {
       </div>
       <div>
         <div className="sub-header-margin">
-          <h2 style={{marginBottom: ".3em"}} className="sec-font3 standard-fz2">NewsLetter</h2>
+          <h2
+            style={{ marginBottom: ".3em" }}
+            className="sec-font3 standard-fz2"
+          >
+            NewsLetter
+          </h2>
           <p className="min-font sec-font-clr">
             Subscribe to our newsletter to stay updated on current information
           </p>
         </div>
-        <div className="footer-input-container header-margin">
-          <input
-            ref={inputRef}
-            className="footer-input"
-            type="email"
-            placeholder="Enter your email"
-          />
-          <button
-            onClick={footerEmailSubmit}
-            className="sec-font standard-fz pri-bg btn-padding scale transition"
-          >
-            <i className="fa-solid fa-paper-plane"></i>
-          </button>
+        <div className="header-margin">
+          <NewsletterForm />
         </div>
         <div className="links sub-header-margin">
           <div className="social-handle scale transition">
@@ -195,12 +171,12 @@ export default function Footer() {
           </div>
           <div className="social-handle scale transition">
             <a href="">
-              <i className="fa-brands fa-twitter pri-bg standard-fz"></i>
+              <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
             </a>
           </div>
           <div className="social-handle scale transition">
             <a href="">
-              <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
+              <i className="fa-brands fa-x-twitter pri-bg standard-fz"></i>
             </a>
           </div>
           <div className="social-handle scale transition">
@@ -210,9 +186,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="location">
-          <p className="min-font sec-font-clr">
+          <p className="min-font sec-font-clr standard-weight">
             <i className="fa-solid fa-copyright sec-font-clr standard-fz"></i>{" "}
-            {date.getFullYear()}, home, All rights reserved.
+            {date.getFullYear()}, WheelsonDemand, All rights reserved.
           </p>
         </div>
       </div>

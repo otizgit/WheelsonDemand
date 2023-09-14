@@ -52,7 +52,7 @@ body {
   --black: hsl(0, 0%, 0%);
 
   /* CLAMPS: */
-  --clampMin: clamp(0.5rem, 0.9vw, 1.5rem);
+  --clampMin: clamp(0.5rem, 0.95vw, 1.5rem);
   --clamp1: clamp(1rem, 1vw, 3rem);
   --clamp2: clamp(1.5rem, 1vw, 4rem);
   --clamp3: clamp(1.9rem, 2vw, 6rem);

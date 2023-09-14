@@ -3,6 +3,7 @@ import "../../styles/hotdeals.css";
 import Title from "./Title";
 import carData from "../../assets/data/carData";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function HotDeals() {
   const hotDealsArray = [];
@@ -26,8 +27,8 @@ export default function HotDeals() {
               data-aos="fade-up"
               data-aos-duration="500"
             >
-              <img
-                loading="lazy"
+              <LazyLoadImage
+                effect="blur"
                 src={hotDeal.imgUrl}
                 alt={hotDeal.carName}
                 className="car-img transition sub-header-margin"

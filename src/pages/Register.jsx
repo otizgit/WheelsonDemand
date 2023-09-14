@@ -10,6 +10,7 @@ export default function Register() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(false);
+    document.title = "Register"
   }, []);
 
   return (

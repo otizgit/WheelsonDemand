@@ -13,6 +13,7 @@ export default function Cars() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = "WheelsonDemand - Browse Cars"
   }, []);
 
   let paramCheck = "";

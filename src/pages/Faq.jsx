@@ -4,7 +4,6 @@ import faqData from "../assets/data/faqData";
 import { ToggleContext } from "../App";
 import "../styles/faq.css";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 export default function Faq() {
   const setDisplayHeader = useContext(ToggleContext);
@@ -12,6 +11,7 @@ export default function Faq() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = "WheelsonDemand - FAQS";
   }, []);
 
   const [clickedAccordion, setClickedAccordion] = useState(null);
@@ -59,7 +59,6 @@ export default function Faq() {
     }
   }
 
-
   const faqElement = faqData.map((data, i) => {
     return (
       <div className="accordion" key={data.id}>
@@ -102,7 +101,7 @@ export default function Faq() {
           Please send it directly to us below:
         </p>
         <form action="" className="header-margin2">
-          <div className="sub-header-margin">
+          <div className="form-wrapper">
             <input
               ref={inputRef}
               type="email"
@@ -110,13 +109,15 @@ export default function Faq() {
               required
             />
           </div>
-          <textarea
-            ref={questionRef}
-            cols="30"
-            rows="6"
-            placeholder="Enter your question"
-            required
-          ></textarea>
+          <div className="form-wrapper">
+            <textarea
+              ref={questionRef}
+              cols="30"
+              rows="6"
+              placeholder="Enter your question"
+              required
+            ></textarea>
+          </div>
           <button
             onClick={notify}
             className="pri-bg transition standard-weight"

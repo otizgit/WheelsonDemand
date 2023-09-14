@@ -1,5 +1,5 @@
 footer {
-  padding-block: 4vw;
+  padding-block: 5vw;
   background-color: hsl(0, 0%, 0%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -39,6 +39,9 @@ footer {
   display: flex;
   gap: 0.5em;
 }
+.footer-input-container input {
+  width: 100%;
+}
 
 .download-links-img {
   display: flex;
@@ -55,7 +58,7 @@ footer {
 
 @media (max-width: 1090px) {
   footer {
-  padding-block: 10vw;
+    padding-block: 20vw;
     text-align: center;
   }
   footer .logo {

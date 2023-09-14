@@ -10,6 +10,7 @@ export default function SignIn() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(false);
+    document.title = "Sign In"
   }, []);
 
   const [isOnView, setIsOnView] = useState(false);

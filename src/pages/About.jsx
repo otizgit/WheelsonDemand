@@ -1,16 +1,14 @@
 import React, { useEffect, useContext } from "react";
-import plainCarImg from "../../src/assets/images/hero-img-plain3.png";
 import "../styles/about.css";
 import playStoreImg from "../../src/assets/images/Download-Links/play-store.png";
 import appStoreImg from "../../src/assets/images/Download-Links/app-store.png";
 import logoWhite from "../../src/assets/images/logos/logoWhite.png";
 import phoneGif from "../../src/assets/images/phone.gif";
 import newsletterGif from "../../src/assets/images/newsletter.gif";
-import teamOne from "../../src/assets/images/Team/team1.avif";
-import teamTwo from "../../src/assets/images/Team/team2.avif";
-import teamThree from "../../src/assets/images/Team/team3.avif";
+import NewsletterForm from "../components/UI/NewsletterForm";
 import SectionHeader from "../components/UI/SectionHeader";
 import { ToggleContext } from "../App";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function About() {
   const setDisplayHeader = useContext(ToggleContext);
@@ -18,24 +16,28 @@ export default function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = "WheelsonDemand - About";
   }, []);
 
   const teamData = [
     {
       id: 1,
-      imgSrc: teamOne,
+      imgSrc:
+        "https://ik.imagekit.io/zusxqcpbw/tr:w-400/team1.avif?updatedAt=1694600057681",
       teamName: "Craig Dickson",
       teamPosition: "Lead Consultant",
     },
     {
       id: 2,
-      imgSrc: teamTwo,
+      imgSrc:
+        "https://ik.imagekit.io/zusxqcpbw/tr:w-400/team2.avif?updatedAt=1694600057523",
       teamName: "Tim White",
       teamPosition: "Lead Technical Advisor",
     },
     {
       id: 3,
-      imgSrc: teamThree,
+      imgSrc:
+        "https://ik.imagekit.io/zusxqcpbw/tr:w-400/team3.avif?updatedAt=1694600057617",
       teamName: "Daniel Wood",
       teamPosition: "Software Engineer",
     },
@@ -46,9 +48,9 @@ export default function About() {
       <SectionHeader title="ABOUT US" />
       <div className="flex constant-padding about-hero-container header-margin">
         <div>
-          <img
-            loading="lazy"
-            src={plainCarImg}
+          <LazyLoadImage
+            effect="blur"
+            src="https://ik.imagekit.io/zusxqcpbw/tr:w-600/hero-img-plain3.png?updatedAt=1694598286615"
             className="about-img"
             alt="car image"
           />
@@ -193,7 +195,6 @@ export default function About() {
             tomorrow.
           </p>
         </div>
-        <div className="writeup-overlay"></div>
       </div>
       <div className="flex-plain constant-padding header-margin2 about-newsletter-container">
         <div
@@ -207,16 +208,16 @@ export default function About() {
           </p>
           <div className="img-wrapper flex-plain">
             <button>
-              <img
-                loading="lazy"
+              <LazyLoadImage
+                effect="blur"
                 className="scale transition"
                 src={playStoreImg}
                 alt="play store"
               />
             </button>
             <button>
-              <img
-                loading="lazy"
+              <LazyLoadImage
+                effect="blur"
                 className="scale transition"
                 src={appStoreImg}
                 alt="app store"
@@ -225,8 +226,8 @@ export default function About() {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-          <img
-            loading="lazy"
+          <LazyLoadImage
+            effect="blur"
             className="phone-gif"
             src={phoneGif}
             alt="phone swiping"
@@ -235,8 +236,8 @@ export default function About() {
       </div>
       <div className="flex-plain constant-padding constant-margin about-newsletter-container about-newsletter">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-          <img
-            loading="lazy"
+          <LazyLoadImage
+            effect="blur"
             className="phone-gif"
             src={newsletterGif}
             alt="newsletter image"
@@ -247,16 +248,7 @@ export default function About() {
           <p className="min-font sec-font-clr sub-header-margin">
             Subscribe to our newsletter to stay updated on current information
           </p>
-          <div className="footer-input-container header-margin">
-            <input
-              className="footer-input"
-              type="text"
-              placeholder="Enter your email"
-            />
-            <button className="sec-font standard-fz pri-bg btn-padding scale transition">
-              <i className="fa-solid fa-paper-plane"></i>
-            </button>
-          </div>
+          <NewsletterForm />
         </div>
       </div>
       <div className="constant-padding constant-margin">
@@ -264,9 +256,14 @@ export default function About() {
           Meet Our Highly Experienced Team
         </h1>
         <div className="cars-container">
-          {teamData.map((data) => {
+          {teamData.map((data, index) => {
             return (
-              <div key={data.id} className="team-container shadow">
+              <div
+                key={data.id}
+                className="team-container shadow"
+                data-aos="slide-up"
+                data-aos-delay={index * 100}
+              >
                 <img
                   loading="lazy"
                   className="sub-header-margin"

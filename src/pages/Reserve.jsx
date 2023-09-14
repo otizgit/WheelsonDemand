@@ -399,13 +399,13 @@ export default function Reserve() {
         <div className="sub-header-margin">
           <div className="flex-plain">
             <input
+              onClick={toggleBtnVisibility}
               ref={confirmRef}
               className="reserve-input"
               type="checkbox"
               id="agree"
             />
             <label
-              onClick={toggleBtnVisibility}
               className="pri-font-clr standard-weight"
               htmlFor="agree"
             >
@@ -413,7 +413,7 @@ export default function Reserve() {
               <Link
                 style={{ textDecoration: "none" }}
                 className="sec-font-clr2"
-                to="/policy"
+                to="/privacy-policy"
               >
                 terms and policies
               </Link>

@@ -9,6 +9,7 @@ export default function Blog() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = "WheelsonDemand - Blogs"
   }, []);
   return (
     <div>

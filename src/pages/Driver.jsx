@@ -8,6 +8,7 @@ export default function Driver() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = "WheelsonDemand - Become a Driver"
   }, []);
 
   const [countries, setCountries] = useState([]);

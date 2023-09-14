@@ -2,14 +2,47 @@ import React, { useEffect, useContext } from "react";
 import "../styles/contact.css";
 import SectionHeader from "../components/UI/SectionHeader";
 import { ToggleContext } from "../App";
+import { toast } from "react-toastify";
+import { useRef } from "react";
 
 export default function Contact() {
   const setDisplayHeader = useContext(ToggleContext);
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const subjectRef = useRef(null);
+  const messageRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = "WheelsonDemand - Contact";
   }, []);
+
+  function contactFormSubmit(e) {
+    e.preventDefault();
+    if (
+      nameRef.current.value === "" ||
+      emailRef.current.value === "" ||
+      subjectRef.current.value === "" ||
+      messageRef.current.value === ""
+    ) {
+      toast.error("Please fill in the fields", {
+        theme: "dark",
+      });
+    } else if (!emailRef.current.value.match(emailRegex)) {
+      toast.error("Please enter a valid email", {
+        theme: "dark",
+      });
+    } else {
+      toast.success(
+        "Your message has been sent successfully, we will reach out to you soon",
+        {
+          theme: "dark",
+        }
+      );
+    }
+  }
 
   return (
     <div>
@@ -81,9 +114,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact-form-container">
-          <p
-            className="standard-weight align sec-font sec-font-clr standard-fz2 header-margin"
-          >
+          <p className="standard-weight align sec-font sec-font-clr standard-fz2 header-margin">
             Send Us A Message
           </p>
           <form action="">
@@ -91,22 +122,37 @@ export default function Contact() {
               style={{ gap: "1em" }}
               className="flex-main form-wrapper contact-div"
             >
-              <input required type="text" placeholder="Enter your name" />
-              <input required type="email" placeholder="Enter your email" />
+              <input
+                ref={nameRef}
+                required
+                type="text"
+                placeholder="Enter your name"
+              />
+              <input
+                ref={emailRef}
+                required
+                type="email"
+                placeholder="Enter your email"
+              />
             </div>
-            <div
-              className="form-wrapper"
-            >
-              <input required type="text" placeholder="Subject" />
+            <div className="form-wrapper">
+              <input
+                ref={subjectRef}
+                required
+                type="text"
+                placeholder="Subject"
+              />
             </div>
             <div className="form-wrapper">
               <textarea
+                ref={messageRef}
                 cols="30"
                 rows="10"
                 placeholder="Enter message"
               ></textarea>
             </div>
             <button
+              onClick={contactFormSubmit}
               type="submit"
               className="pri-bg standard-weight transition"
             >

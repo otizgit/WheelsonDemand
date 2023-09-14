@@ -3,38 +3,32 @@ import "../../styles/partners.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import mazdaLogo from "../../assets/images/Car-Logos/mazda.png";
-import nissanLogo from "../../assets/images/Car-Logos/nissan.png";
-import mitsubishiLogo from "../../assets/images/Car-Logos/mitsubishi.png";
-import audiLogo from "../../assets/images/Car-Logos/audi.png";
-import toyotaLogo from "../../assets/images/Car-Logos/toyota.png";
-import bmwLogo from "../../assets/images/Car-Logos/bmw.png";
 
 export default function Partners() {
   const partnersData = [
     {
       id: 1,
-      imgUrl: mitsubishiLogo,
+      imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-200/mitsubishi.png?updatedAt=1694599616213",
     },
     {
       id: 2,
-      imgUrl: mazdaLogo,
+      imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-200/mazda.png?updatedAt=1694599616720",
     },
     {
       id: 3,
-      imgUrl: nissanLogo,
+      imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-200/nissan.png?updatedAt=1694599619460",
     },
     {
       id: 4,
-      imgUrl: audiLogo,
+      imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-400/audi.png?updatedAt=1694599618833",
     },
     {
       id: 5,
-      imgUrl: toyotaLogo,
+      imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-200/toyota.png?updatedAt=1694599619180",
     },
     {
       id: 6,
-      imgUrl: bmwLogo,
+      imgUrl: "https://ik.imagekit.io/zusxqcpbw/tr:w-200/bmw.png?updatedAt=1694599619149",
     },
   ];
 
