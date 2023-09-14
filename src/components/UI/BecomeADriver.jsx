@@ -6,8 +6,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function BecomeADriver() {
   return (
     <div className="constant-margin constant-padding earn-with-us flex">
-      <LazyLoadImage
-        effect="blur"
+      <img
         className="earn-img"
         src="https://ik.imagekit.io/zusxqcpbw/tr:w-800/Lambo.png?updatedAt=1694597061473"
         alt="Lamborghini"
