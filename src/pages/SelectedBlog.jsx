@@ -119,15 +119,16 @@ export default function SelectedBlog() {
                     Was this content helpful?
                   </p>
                   {!isSignedIn ? (
-                    <p
+                    <Link
                       style={{
                         fontStyle: "italic",
                         textDecoration: "underline",
                       }}
                       className="min-font pri-font-clr standard-weight"
+                      to="/sign-in"
                     >
                       You Have To Be Signed In To Reply...
-                    </p>
+                    </Link>
                   ) : (
                     <div>
                       <textarea

@@ -4,8 +4,6 @@ import logoWhite from "../../assets/images/logos/logoWhite.png";
 import { Link, NavLink } from "react-router-dom";
 import playStoreImg from "../../assets/images/Download-Links/play-store.png";
 import appStoreImg from "../../assets/images/Download-Links/app-store.png";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import NewsletterForm from "../UI/NewsletterForm";
 
 export default function Footer() {
@@ -164,26 +162,34 @@ export default function Footer() {
           <NewsletterForm />
         </div>
         <div className="links sub-header-margin">
-          <div className="social-handle scale transition">
-            <a href="">
-              <i className="fa-brands fa-facebook-f pri-bg standard-fz"></i>
-            </a>
-          </div>
-          <div className="social-handle scale transition">
-            <a href="">
-              <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
-            </a>
-          </div>
-          <div className="social-handle scale transition">
-            <a href="">
-              <i className="fa-brands fa-x-twitter pri-bg standard-fz"></i>
-            </a>
-          </div>
-          <div className="social-handle scale transition">
-            <a href="">
-              <i className="fa-brands fa-pinterest-p pri-bg standard-fz"></i>
-            </a>
-          </div>
+          <a
+            style={{ textDecoration: "none" }}
+            className="social-handle scale transition"
+            href=""
+          >
+            <i className="fa-brands fa-facebook-f pri-bg standard-fz"></i>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            className="social-handle scale transition"
+            href="https://www.linkedin.com/in/emmanuel-oj/"
+          >
+            <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            className="social-handle scale transition"
+            href="https://twitter.com/dev_otiz"
+          >
+            <i className="fa-brands fa-x-twitter pri-bg standard-fz"></i>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            className="social-handle scale transition"
+            href="https://github.com/otizgit"
+          >
+            <i className="fa-brands fa-github pri-bg standard-fz"></i>
+          </a>
         </div>
         <div className="location">
           <p className="min-font sec-font-clr standard-weight">
