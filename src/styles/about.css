@@ -71,7 +71,7 @@
   .about-newsletter {
     flex-direction: column;
   }
-  .about-newsletter div {
+  .about-newsletter, .about-sub-title  {
     text-align: center;
   }
 }

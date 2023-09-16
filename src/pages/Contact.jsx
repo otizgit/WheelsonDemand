@@ -98,12 +98,12 @@ export default function Contact() {
             </div>
             <div className="social-handle scale transition">
               <a href="">
-                <i className="fa-brands fa-twitter pri-bg standard-fz"></i>
+                <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
               </a>
             </div>
             <div className="social-handle scale transition">
               <a href="">
-                <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
+                <i className="fa-brands fa-x-twitter pri-bg standard-fz"></i>
               </a>
             </div>
             <div className="social-handle scale transition">

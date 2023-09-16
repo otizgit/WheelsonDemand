@@ -68,7 +68,7 @@ const blogData = [
     date: "11 Aug, 2023",
     time: "9:30pm",
     imgUrl:
-      "https://ik.imagekit.io/zusxqcpbw/tr:w-400/blog-image1.webp?updatedAt=1694599415504",
+      "https://ik.imagekit.io/zusxqcpbw/tr:w-800/blog-image1.webp?updatedAt=1694599415504",
     replies: [
       {
         id: 1,
@@ -160,7 +160,7 @@ const blogData = [
     date: "13 Feb, 2023",
     time: "10:44am",
     imgUrl:
-      "https://ik.imagekit.io/zusxqcpbw/tr:w-400/blog-image2.webp?updatedAt=1694599415528",
+      "https://ik.imagekit.io/zusxqcpbw/tr:w-800/blog-image2.webp?updatedAt=1694599415528",
     replies: [
       {
         id: 1,
@@ -277,7 +277,7 @@ const blogData = [
     date: "11 Mar, 2023",
     time: "5:23pm",
     imgUrl:
-      "https://ik.imagekit.io/zusxqcpbw/tr:w-400/blog-image3.webp?updatedAt=1694599415490",
+      "https://ik.imagekit.io/zusxqcpbw/tr:w-800/blog-image3.webp?updatedAt=1694599415490",
     replies: [
       {
         id: 1,

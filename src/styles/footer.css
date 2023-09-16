@@ -89,4 +89,11 @@ footer {
     width: 80%;
     margin-inline: auto;
   }
+  .social-handle {
+    width: 50px;
+    height: 50px;
+  }
+  .social-handle i {
+    font-size: 1.25rem;
+  }
 }

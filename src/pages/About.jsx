@@ -203,7 +203,7 @@ export default function About() {
           data-aos-duration="500"
         >
           <h2 className="sec-font standard-fz2">We Are Available On Mobile</h2>
-          <p className="min-font sec-font-clr sub-header-margin">
+          <p className="min-font sec-font-clr sub-header-margin about-sub-title">
             Check out our mobile app today
           </p>
           <div className="img-wrapper flex-plain">
