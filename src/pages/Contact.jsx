@@ -91,26 +91,34 @@ export default function Contact() {
             </a>
           </div>
           <div className="links">
-            <div className="social-handle scale transition">
-              <a href="">
-                <i className="fa-brands fa-facebook-f pri-bg standard-fz"></i>
-              </a>
-            </div>
-            <div className="social-handle scale transition">
-              <a href="">
-                <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
-              </a>
-            </div>
-            <div className="social-handle scale transition">
-              <a href="">
-                <i className="fa-brands fa-x-twitter pri-bg standard-fz"></i>
-              </a>
-            </div>
-            <div className="social-handle scale transition">
-              <a href="">
-                <i className="fa-brands fa-pinterest-p pri-bg standard-fz"></i>
-              </a>
-            </div>
+            <a
+              style={{ textDecoration: "none" }}
+              className="social-handle scale transition"
+              href=""
+            >
+              <i className="fa-brands fa-facebook-f pri-bg standard-fz"></i>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              className="social-handle scale transition"
+              href="https://www.linkedin.com/in/emmanuel-oj/"
+            >
+              <i className="fa-brands fa-linkedin-in pri-bg standard-fz"></i>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              className="social-handle scale transition"
+              href="https://twitter.com/dev_otiz"
+            >
+              <i className="fa-brands fa-x-twitter pri-bg standard-fz"></i>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              className="social-handle scale transition"
+              href="https://github.com/otizgit"
+            >
+              <i className="fa-brands fa-github pri-bg standard-fz"></i>
+            </a>
           </div>
         </div>
         <div className="contact-form-container">

@@ -2,7 +2,6 @@ section {
   position: relative;
 }
 .hero-img {
-  height: 120vh;
   width: 100%;
   object-fit: cover;
 }
@@ -45,7 +44,7 @@ section {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .hero-img {
     height: 100vh;
     object-fit: cover;
@@ -62,7 +61,7 @@ section {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .hero-title {
     top: 30%;
     font-size: 2.5rem;
