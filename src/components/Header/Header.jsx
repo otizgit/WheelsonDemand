@@ -11,7 +11,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex-main constant-width constant-padding">
+    <header data-aos="fade" data-aos-delay= "600" className="flex-main constant-width constant-padding">
       <Link style={{ textDecoration: "none" }} to="/home">
         <img loading="lazy" className="logo" src={logoWhite} alt="logo" />
       </Link>

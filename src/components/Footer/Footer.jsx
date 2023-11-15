@@ -9,7 +9,7 @@ import NewsletterForm from "../UI/NewsletterForm";
 export default function Footer() {
   const date = new Date();
   return (
-    <footer className="constant-padding">
+    <footer data-aos="fade" data-aos-delay= "600" className="constant-padding">
       <div>
         <div className="header-margin">
           <Link to="/home">
