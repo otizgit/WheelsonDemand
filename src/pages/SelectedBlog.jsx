@@ -18,6 +18,7 @@ export default function SelectedBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setDisplayHeader(true);
+    document.title = `WheelsonDemand - ${blog.map(selected => selected.blogTitle)}`
   }, [blog]);
 
   return (
