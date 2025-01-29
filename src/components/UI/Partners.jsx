@@ -32,7 +32,7 @@ export default function Partners() {
 
   return (
     <div className=" constant-margin ">
-      <Marquee autoFill={true} gradient={true} gradientColor="hsl(0, 0%, 16%)" gradientWidth={500}>
+      <Marquee autoFill={true} gradient={true} gradientColor="hsl(0, 0%, 16%)" gradientWidth={100}>
         {partnersData.map((data) => {
           return (
             <div className="partners-container" key={data.id}>
