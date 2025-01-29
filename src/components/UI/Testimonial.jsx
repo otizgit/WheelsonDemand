@@ -62,10 +62,10 @@ export default function Testimonial() {
                     alt="customer image"
                   />
                   <div className="customer-info">
-                    <p style={{ marginBottom: ".5em" }} className="standard-fz">
+                    <p style={{ marginBottom: ".5em" }} className="standard-fz customer-name">
                       {data.name}
                     </p>
-                    <p className="standard-fz">{data.position}</p>
+                    <p className="standard-fz client-position">{data.position}</p>
                   </div>
                 </div>
                 <div>

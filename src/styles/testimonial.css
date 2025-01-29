@@ -10,6 +10,7 @@
     padding: 2rem;
     border-top: 5px solid var(--priClr);
     position: relative;
+    border-bottom: 0.05em solid var(--priClr)
 }
 .testimonial-container:hover {
     transform: translateY(-8px);
@@ -21,10 +22,10 @@
 
 .customer-info p:not(:last-child) {
     font-weight: 700;
-    color: hsl(0, 0%, 70%);
+    color: hsl(0, 0%, 80%);
 }
 .customer-info p:last-child {
     font-size: 0.9rem;
     font-weight: 600;
-    color: rgb(54, 54, 54);
+    color: hsl(0, 0%, 70%);
 }

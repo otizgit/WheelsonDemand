@@ -38,7 +38,7 @@ input[type="file"] {
 }
 
 body {
-  background-color: var(--darkClr);
+  background-color: hsl(0, 0%, 16%);
 }
 
 :root {
