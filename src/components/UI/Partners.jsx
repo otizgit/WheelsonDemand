@@ -1,8 +1,6 @@
 import React from "react";
 import "../../styles/partners.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Marquee from "react-fast-marquee";
 
 export default function Partners() {
   const partnersData = [
@@ -33,8 +31,8 @@ export default function Partners() {
   ];
 
   return (
-    <div className="constant-padding constant-margin cars-partners-container">
-      <Slider>
+    <div className=" constant-margin ">
+      <Marquee autoFill={true} gradient={true} gradientColor="hsl(0, 0%, 16%)" gradientWidth={500}>
         {partnersData.map((data) => {
           return (
             <div className="partners-container" key={data.id}>
@@ -47,7 +45,7 @@ export default function Partners() {
             </div>
           );
         })}
-      </Slider>
+      </Marquee>
     </div>
   );
 }

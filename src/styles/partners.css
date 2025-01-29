@@ -1,9 +1,9 @@
 .partners-container {
-    cursor: grab;
+    margin-right: 80px;
 }
 
 .partners-logo {
-    width: 15vw;
+    width: 120px;
     margin-inline: auto;
 }
 
