@@ -5,7 +5,7 @@
 }
 
 .car-box {
-  border-block: 2px solid var(--priClr);
+  border: 0.05em solid var(--priClr);
   padding: 1.5rem 1rem;
   border-radius: 10px;
   text-align: center;
@@ -41,12 +41,13 @@
   gap: 1rem;
 }
 .deals-btn-container > * {
-  border: 2px solid black;
+  border: 0.2em solid gray;
   flex: 1;
   padding-block: 0.6em;
   font-weight: 700;
   text-transform: uppercase;
   background-color: black;
+  border-radius: 20px;
 }
 .deals-btn-container > *:hover,
 .deals-btn-container > *:focus {
